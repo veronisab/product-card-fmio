@@ -25,7 +25,7 @@ main {
     display:flex;
     flex-direction:row;
     border-radius: 20px;
-    width: 600px;
+    max-width: 90%;
 }
 
 .image {
