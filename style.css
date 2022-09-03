@@ -9,7 +9,7 @@
     }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
     display: flex;
     justify-content: center;
@@ -25,22 +25,25 @@ main {
     display:flex;
     flex-direction:row;
     border-radius: 20px;
-    max-width: 90%;
+    max-width: 660px;
 }
 
 .image {
-    background: url(images/image-product-desktop.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex:1;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 40px;
-   } 
+    max-width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    max-width:100%;
+    border-radius: 20px 0px 0px 20px;
+    margin: 0;
+}
 
 .info {
     flex: 1;
     padding: 30px;
+    width: 50%;
 } 
 
 p {
@@ -105,16 +108,24 @@ button {
 
     main {
         display:block;
-        max-width: 60%;
+        max-width: 100%;
+        border-radius: 20px;
+        margin: 2em;
+        padding: 0;
     }
 
-       .image {
-        background: url(images/image-product-mobile.jpg);
-        height:400px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
-       }
+    h1 {
+        font-size: 2em;
+    }
+    .image {
+        max-width: 100%;
+}
+    .info {
+        width: fit-content;
+        padding: 2em;
+}
+    img {
+        max-width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
   }

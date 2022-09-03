@@ -11,7 +11,13 @@
 </head>
 <body>
   <main>
-    <div class="image"></div>
+    <div class="image">
+      <picture>
+        <source media="(min-width: 599px)" srcset="images/image-product-desktop.jpg">
+        <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg">
+        <img src="images/image-product-desktop.jpg" alt="perfume among leaves">
+      </picture>
+    </div>
     <div class="info">
           <h2>Perfume</h2>
 
@@ -27,14 +33,14 @@
               <img src="images/icon-cart.svg" alt="add to card image"> 
               Add to Cart
           </button>
-  </div>
+    </div>
 
   
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Veronisab</a>.
-  </div> -->
+    </div> -->
 
-</main>
+  </main>
 </body>
 </html>
